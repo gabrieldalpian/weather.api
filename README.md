@@ -1,3 +1,3 @@
 # Weather Web
 
-![Updated View](weather.png)
+![Updated View](weatherImage.png)
