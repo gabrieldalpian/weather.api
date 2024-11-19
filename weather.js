@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const apiKey = '5a209eba4245b36be61aac6226e310ae';
 
 document.querySelector('.getWeather').addEventListener('click', () => {
@@ -11,7 +10,7 @@ document.querySelector('.getWeather').addEventListener('click', () => {
 });
 
 async function getWeather(city) {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`; // Use backticks for template literals
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -46,7 +45,7 @@ document.getElementById('getWeather').addEventListener('click', () => {
 });
 
 async function getWeather(city) {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`; // Use backticks for template literals
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     try {
         const response = await fetch(url);
         if (!response.ok) {
@@ -68,4 +67,3 @@ function displayWeather(data) {
         <p>Weather: ${weather[0].description}</p>
     `;
 }
->>>>>>> 60f3489f5bd7912f71a054d11008984f38fdf173
