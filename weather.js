@@ -1,7 +1,7 @@
 const apiKey = '5a209eba4245b36be61aac6226e310ae';
 
-document.querySelector('.getWeather').addEventListener('click', () => {
-    const city = document.querySelector('.city').value;
+document.querySelector('#getWeather').addEventListener('click', () => {
+    const city = document.querySelector('#city').value; // Use '#' for IDs
     if (city) {
         getWeather(city);
     } else {
@@ -23,7 +23,7 @@ async function getWeather(city) {
     }
 }
 
-function showWeather(data) {
+function displayWeather(data) {
     const weatherResult = document.getElementById('weatherResult');
 
     const cityName = data.name;
@@ -35,4 +35,4 @@ function showWeather(data) {
         <p>Temperature: ${temperature} °C</p>
         <p>Weather: ${description}</p>
     `;
-};
+}
