@@ -23,12 +23,16 @@ async function getWeather(city) {
     }
 }
 
-function displayWeather(data) {
+function showWeather(data) {
     const weatherResult = document.getElementById('weatherResult');
-    const { name, main, weather } = data;
+
+    const cityName = data.name;
+    const temperature = data.main.temp;
+    const description = data.weather[0].description;
+
     weatherResult.innerHTML = `
-        <h2>Weather in ${name}</h2>
-        <p>Temperature: ${main.temp} °C</p>
-        <p>Weather: ${weather[0].description}</p>
+        <h2>Weather in ${cityName}</h2>
+        <p>Temperature: ${temperature} °C</p>
+        <p>Weather: ${description}</p>
     `;
-}
+};
